@@ -1,0 +1,71 @@
+// import React, { useState } from 'react';
+// import { View, Text, SafeAreaView, ScrollView, Image, StyleSheet } from 'react-native';
+// import { StatusBar } from 'expo-status-bar';
+// import { images } from '../../constants';
+
+// const SignIn = () => {
+//   const [form, setForm] = useState({
+//     email: '',
+//     password: '',
+//   });
+
+//   return (
+//     <SafeAreaView style={styles.container}>
+//       <ScrollView>
+//         <View style={styles.content}>
+//           <Image
+//             source={images.logo}
+//             resizeMode="contain"
+//             style={styles.logo}
+//           />
+//           <Text style={styles.title}>Log in to VK</Text>
+
+//           <FormField
+//             title="Email"
+//             value={form.email}
+//             handleChangeText={(e) => setForm({ ...form, email: e })}
+//             otherStyles={styles.fieldSpacing}
+//             keyboardType="email-address"
+//           />
+
+//           <FormField
+//             title="Password"
+//             value={form.password}
+//             handleChangeText={(e) => setForm({ ...form, password: e })}
+//             otherStyles={styles.fieldSpacing}
+//           />
+//         </View>
+//       </ScrollView>
+
+//       <StatusBar backgroundColor="#161622" style="light" />
+//     </SafeAreaView>
+//   );
+// };
+
+// const styles = StyleSheet.create({
+//   container: {
+//     flex: 1,
+//     backgroundColor: '#161622',
+//   },
+//   content: {
+//     width: '100%',
+//     justifyContent: 'center',
+//     paddingHorizontal: 16,
+//     marginVertical: 24,
+//   },
+//   logo: {
+//     width: 115,
+//     height: 35,
+//   },
+//   title: {
+//     fontSize: 24,
+//     color: '#fff',
+//     fontWeight: '600',
+//     marginTop: 16,
+//   },
+//   fieldSpacing: {
+//     marginTop: 28,
+//   },
+// });
+
+// export default SignIn;
